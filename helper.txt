@@ -1,0 +1,20 @@
+iniciar proyecto en node crea > package.json
+
+npm init -y
+
+instalar cypress
+
+npm install cypress --save-dev
+
+Ejecutar cypress-- abrir su test runner UI
+-- Modo interactivo
+npx cypress open
+
+modo hedless
+npx cypress run
+
+npx cypress run --spec 'cypress/e2e/1-getting-started/todo.cy.js'
+
+Ver ejecucion de pruebas en el navegador
+npx cypress run --headed
+

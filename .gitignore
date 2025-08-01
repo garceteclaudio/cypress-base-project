@@ -1,0 +1,64 @@
+# Archivos y directorios de Node.js
+# ==================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.env # Archivos de variables de entorno locales (NO subir nunca a Git)
+.env.*.local # Otros archivos .env locales específicos
+package-lock.json # Puede ser opcional incluirlo, pero generalmente se versiona
+pnpm-lock.yaml # Si usas pnpm
+.pnpm-store/ # Si usas pnpm
+package-lock.json
+
+# Archivos de Cypress
+# ===================
+cypress/videos/ # Grabaciones de las ejecuciones de pruebas
+cypress/screenshots/ # Capturas de pantalla de fallos
+cypress/results/ # Archivos de resultados de pruebas (ej. mochawesome.json)
+cypress/report/ # Directorios de reportes generados
+cypress/downloads/ # Archivos descargados durante las pruebas
+cypress/.run/ # Archivos temporales de ejecución
+cypress/e2e/.ts-node/ # Caché de ts-node si usas TypeScript en tus tests
+
+# Archivos de caché del sistema operativo
+# =======================================
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# Editores y IDEs
+# ===============
+.vscode/ # Directorio de configuración de VS Code (opcional, si no quieres compartir la configuración del espacio de trabajo)
+.idea/ # Directorio de configuración de IntelliJ/WebStorm
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.log # Archivos de log genéricos
+
+# Archivos de compilación o transpilaación (si aplica)
+# ===================================================
+dist/ # Directorio de salida de compilación (ej. Babel, Webpack)
+build/ # Otro nombre común para el directorio de salida
+.cache/ # Directorios de caché de herramientas como Babel, Webpack
+
+# Otros archivos temporales o generados
+# =====================================
+*.log
+*.tmp
+*.bak
+*.swp # Archivos de swap de Vim
+*.swo
+.nyc_output/ # Salida de cobertura de código (ej. Istanbul/NYC)
+coverage/ # Directorio de reportes de cobertura de código
+*.zip
+*.tar.gz
+
+# Archivos de Appium (si tu proyecto de Cypress incluye alguna prueba móvil que usa Appium)
+# =========================================================================================
+appium-debug.log*
+build/ # Directorio de construcción de Appium (si aplicara)
